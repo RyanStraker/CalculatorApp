@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-body" id="container-body">
+
+        <!--Top row with calc name and the styling toggler-->
+    
+        <header class="col-12">
+          <div class="col-2">
+            <h2 class="white-font">calc</h2>
+          </div>
+          <div class="col-2 ">
+            <span class="white-font" style="font-size: 15px;">THEME</span>
+          </div>
+          <div class="col-2 float-right">
+            <p class="col-10">1 2 3</p>
+            <div class="col-12" id="toggler-background">
+              <div id="toggler-knob"></div>
+            </div>
+          </div>   
+              
+        </header>
+
+        <!--End of top row and start of digital user interface-->
+
+        <section class="col-12">
+
+          <h1 id="calculator-digital-interface"><span class="white-font">0484894</span></h1>
+           
+          <!--End of digital user interface and start of buttons-->
+
+          <div id="numbers-section-styling">
+
+            <!--Row One-->
+            <div class="row">
+
+              <div class="col-3">
+
+                <button>7</button>
+
+              </div><!--
+
+           --><div class="col-3">
+
+                <button>8</button>
+
+              </div><!--
+
+           --><div class="col-3">
+
+                <button>9</button>
+
+              </div><!--
+
+            --><div class="col-3">
+
+                <button class="white-font blue-button">DEL</button>
+
+              </div>
+              
+            </div>
+
+            <!--Row Two-->
+
+            <div class="row">
+
+              <div class="col-3">
+
+                <button>4</button>
+
+              </div><!--
+
+           --><div class="col-3">
+
+                <button>5</button>
+
+              </div><!--
+
+           --><div class="col-3">
+
+                <button>6</button>
+
+              </div><!--
+
+            --><div class="col-3">
+
+                <button>+</button>
+                
+              </div>
+              
+            </div>
+
+            <!--Row Three-->
+
+            <div class="row">
+
+              <div class="col-3">
+
+                <button>1</button>
+
+              </div><!--
+
+           --><div class="col-3">
+
+                <button>2</button>
+
+              </div><!--
+
+           --><div class="col-3">
+
+                <button>3</button>
+
+              </div><!--
+
+            --><div class="col-3">
+
+                <button>-</button>
+                
+              </div>
+              
+            </div>
+
+            <!--Row Four-->
+
+            <div class="row">
+
+              <div class="col-3">
+
+                <button>.</button>
+
+              </div><!--
+
+           --><div class="col-3">
+
+                <button>0</button>
+
+              </div><!--
+
+           --><div class="col-3">
+
+                <button>/</button>
+
+              </div><!--
+
+            --><div class="col-3">
+
+                <button>x</button>
+                
+              </div>
+              
+            </div>
+
+            <!--Row Five - larger buttons-->
+            <div class="row last-row">
+              <div class="col-6">
+                <button class="white-font blue-button">RESET</button>
+              </div><!--
+           --><div class="col-6">
+                <button class="white-font red-button">=</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <script>
+    var containerBody = document.getElementById('container-body');
+
+    var height = screen.availHeight;
+
+    var setMarginTop = function() {
+
+      var marginTop = (height / 2) - 298;
+
+      var setAttributeString = "margin-top: " + String(marginTop) + "px;";
+
+      return containerBody.setAttribute('style', setAttributeString);
+    }
+
+    setMarginTop();
+  </script>  
+  </body>
+</html>

@@ -1,0 +1,183 @@
+/* universal stylings. stylings affecting all elements on the page */
+
+    * {
+        margin: 0;
+        font-weight: 700;
+        font-family: "League Spartan";
+        font-size: 32px;
+    }
+
+    html, body {
+        height: 100%;
+        background-color: rgb(59, 70, 100);
+        overflow: hidden;
+    }
+
+/* rules for our custom grid system. containers, container bodies and column widths are defined */
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container-body {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .row {
+        margin-top: 10px;
+    }
+
+    .col-1 {
+        width: 8.333333333%;
+        display: inline-block;;
+    }
+
+    .col-2 {
+        width: 16.6666666%;
+        display: inline-block;
+    }
+
+    .col-3 {
+        width: 25%;
+        display: inline-block;
+    }
+
+    .col-4 {
+        width: 33.33333333%;
+        display: inline-block;
+    }
+
+    .col-5 {
+        width: 41.66666666%;
+        display: inline-block;
+    }
+
+    .col-6 {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .col-7 {
+        width: 58.3333333%;
+        display: inline-block;
+    }
+
+    .col-8 {
+        width: 66.6666666%;
+        display: inline-block;
+    }
+
+    .col-9 {
+        width: 75%;
+        display: inline-block;
+    }
+
+    .col-10 {
+        width: 83.33333333%;
+        display: inline-block;
+    }
+
+    .col-11 {
+        width: 91.6666666%;
+        display: inline-block;
+    }
+
+    .col-12 {
+        width: 100%;
+        display: inline-block;
+    }
+
+/* Structural stylings related to positioning */
+
+/* Cosmetic stylings */
+
+    h1 span {
+        margin-right: 10px;
+    }
+
+    #calculator-digital-interface {
+        background-color: rgb(24, 31, 50);
+        text-align: right;
+        border-radius: 5px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 10px;
+    }
+
+    #numbers-section-styling {
+        margin-top: 10px;
+        background-color: rgb(37, 45, 68);
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .blue-button {
+        background-color: rgb(100, 114, 153) !important;
+        box-shadow: 0px 3px rgb(66, 78, 116) !important;
+        font-size: 25px;
+    }
+
+    .red-button {
+        background-color: rgb(209, 63, 48) !important;
+        box-shadow: 0px 3px rgb(142, 36, 22) !important;
+    }
+
+    .col-3 button, .col-6 button {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        background-color: rgb(234, 227, 219);
+        border: none;
+        box-shadow: 0px 3px rgb(176, 166, 157);
+        border-radius: 5px;
+        height: 43px;
+        color: rgb(77, 83, 95);
+    }
+
+    .col-6 button {
+        width: 85%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .col-3 button:hover, .col-6 button:hover {
+        cursor: pointer;
+    }
+
+    .white-font {
+        color: white !important;
+    }
+
+    .last-row {
+        margin-top: 10px;
+    }
+
+    .float-right {
+        float: right;
+    }    
+    
+    #toggler-background {
+        background-color: rgb(37, 45, 68);
+        border-radius: 15px;
+    }
+
+    #toggler-knob {
+        display: inherit;
+        height: 15px;
+        width: 15px;
+        margin-left: 5px;
+        background-color: rgb(202, 66, 50);
+        border-radius: 360px;
+    }
+
+    .float-right p {
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
