@@ -15,6 +15,7 @@
 
 /* rules for our custom grid system. containers, container bodies and column widths are defined */
 
+    
     .container {
         max-width: 100%;
         width: 100%;
@@ -25,6 +26,39 @@
         width: 25%;
         margin: 0 auto;
     }
+
+    /* rules for responsiveness */
+
+        @media all and (max-width: 1120px) {
+            .container-body {
+                width: 40%;
+                margin: 0 auto;
+            }
+        }
+
+        @media all and (max-width: 650px) {
+                .container-body {
+                    width: 60%;
+                    margin: 0 auto;
+                    font-size: 1px !important;
+                }
+            }
+
+        @media all and (max-width: 427px) {
+            .container-body {
+                width: 80%;
+                margin: 0 auto;
+                font-size: 1px !important;
+            }
+        }
+
+        @media all and (max-width: 325px) {
+            .container-body {
+                width: 95%;
+                margin: 0 auto;
+                font-size: 1px !important;
+            }
+        }
 
     .row {
         margin-top: 10px;
@@ -96,6 +130,7 @@
 
     h1 span {
         margin-right: 10px;
+        vertical-align: sub;
     }
 
     #calculator-digital-interface {
@@ -105,6 +140,7 @@
         padding-top: 5%;
         padding-bottom: 5%;
         margin-top: 10px;
+        overflow: hidden;
     }
 
     #numbers-section-styling {
@@ -117,15 +153,20 @@
         padding-right: 5px;
     }
 
-    .blue-button {
-        background-color: rgb(100, 114, 153) !important;
-        box-shadow: 0px 3px rgb(66, 78, 116) !important;
+    #blue-button:active {
+        background-color: rgb(178, 191, 233);
+        box-shadow: none;
+    }
+
+    #blue-button {
+        background-color: rgb(100, 114, 153);
+        box-shadow: 0px 3px rgb(66, 78, 116);
         font-size: 25px;
     }
 
-    .red-button {
-        background-color: rgb(209, 63, 48) !important;
-        box-shadow: 0px 3px rgb(142, 36, 22) !important;
+    #red-button {
+        background-color: rgb(209, 63, 48);
+        box-shadow: 0px 3px rgb(142, 36, 22);
     }
 
     .col-3 button, .col-6 button {
@@ -148,6 +189,14 @@
 
     .col-3 button:hover, .col-6 button:hover {
         cursor: pointer;
+    }
+
+    button:active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    #red-button:active {
+        background-color: rgb(249, 108, 91);
     }
 
     .white-font {
@@ -179,5 +228,8 @@
     .float-right p {
         font-size: 15px;
         text-align: center;
-        letter-spacing: 3px;
+        letter-spacing: d;
     }
+    
+
+        
